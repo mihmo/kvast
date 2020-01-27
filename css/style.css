@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: #444444;
+  background-color: #ffffff;
+  
+  min-width: 1010px;
+}
+
+.page-header {
+  padding-top: 60px;
+  min-height: 551px;
+  background-image: url("../img/wheat-back.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-header,
+.page-footer {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.page-header__wrapper {
+  width: 800px;
+  margin: 0 auto;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+}
+
+.page-header__logo {
+  width: 140px;
+  height: 76px;
+  margin-right: 60px;
+}
+
+.page-header__logo-image {
+  width: 140px;
+  height: 76px;
+  
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  height: 58px;
+  text-transform: uppercase;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main-nav a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.main-nav a:hover {
+  color: #ffcb78;
+}
+.main-nav a:active {
+  color: #ffcb78;
+  opacity: 0.7;
+}
+
+.main-nav li {
+  margin-right: 56px;
+}
+.main-nav li:last-child{
+  margin-right: 0;
+}
+
+.promo {
+  margin-top: 125px;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 70px;
+
+  text-align: center;
+}
+
+.new-items {
+  width: 800px;
+  margin: 0 auto;
+  outline: 1px solid #e645eb;
+}
+
+.new-items h2 {
+  margin-top: 85px;
+  margin-bottom: 90px;
+}
+
+.new-items h2,
+.new-items h3 {
+  color: #000000;
+  font-size: 40px;
+  line-height: 61px;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: 1px solid #811d1d;
+}
+
+.new-items__catalog {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.catalog__item {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  outline: 1px solid #45eb45;
+}
+
+.catalog__item h3 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 38px;
+  outline: 1px solid #eb4545;
+}
+
+.catalog__item img {
+  outline: 1px solid #eb9545;
+}
+
+.item__wrapper {
+  position: absolute;
+  top: 85px;
+  right: 0px;
+  width: 155px;
+  padding-right: 20px; 
+  outline: 1px solid #eb4545;
+}
+
+.item__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.item__table td {
+  padding: 10px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border: 1px solid #e5e5e5;
+}
+
+.item__components {
+  font-size: 14px;
+  color: #444444;
+}
+
+.item__description {
+  padding: 0px;
+  padding-right: 20px;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  outline: 1px solid #eb4545;
+}
+
+.btn-wrapper b {
+  margin-left: 23px;
+}
+
+.btn {
+  margin: 0;
+  padding: 15px 17px;
+  margin-right: 8px;
+
+  color: #834700;
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: 2px solid #834700;
+}
+.btn:hover {
+  color: #6a3900;
+  border-color: #6a3900;
+}
+.btn:active {
+  color: #d2c4b3;
+  border-color: #d2c4b3;
+}
+
+.btn-buy {
+  color: #ffffff;
+  background-color: #834700;
+}
+.btn-buy:hover {
+  color: #ffffff;
+  background-color: #6a3900;
+}
+.btn-buy:active {
+  color: rgba(255, 255, 255, 0.3);
+}
