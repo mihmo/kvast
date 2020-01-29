@@ -134,95 +134,100 @@
       </section>
 
       <section class="price-list">
-        <h2 class="price-list__title">Ассортимент</h2>
-        <table class="price-list__table">
-          <tr>
-            <th>Название</th>
-            <th>Алк.</th>
-            <th>Ккал</th>
-            <th>Объём</th>
-            <th>Стоимость</th>
-          </tr>
-          <tr>
-            <td>Классика</td>
-            <td>&lt; 1,2%</td>
-            <td>33</td>
-            <td>330 мл</td>
-            <td>120 Р.</td>
-          </tr>
-          <tr>
-            <td>Шабаш</td>
-            <td>&gt; 1,2%</td>
-            <td>45</td>
-            <td>330 мл</td>
-            <td>250 Р.</td>
-          </tr>
-          <tr>
-            <td>Вахтёр <sup class="latest">Новинка</sup></td>
-            <td>&lt; 1%</td>
-            <td>35</td>
-            <td>0,5 л</td>
-            <td>150 Р.</td>
-          </tr>
-          <tr>
-            <td>Романтик <sup class="latest">Новинка</sup></td>
-            <td>&lt; 0,5%</td>
-            <td>27</td>
-            <td>0,5 л</td>
-            <td>90 Р.</td>
-          </tr>
-        </table>
+        <div class="price-list__wrapper">
+          <h2 class="price-list__title">Ассортимент</h2>
+          <table class="price-list__table">
+            <tr>
+              <th>Название</th>
+              <th>Алк.</th>
+              <th>Ккал</th>
+              <th>Объём</th>
+              <th>Стоимость</th>
+            </tr>
+            <tr>
+              <td>Классика</td>
+              <td>&lt; 1,2%</td>
+              <td>33</td>
+              <td>330 мл</td>
+              <td>120 Р.</td>
+            </tr>
+            <tr>
+              <td>Шабаш</td>
+              <td>&gt; 1,2%</td>
+              <td>45</td>
+              <td>330 мл</td>
+              <td>250 Р.</td>
+            </tr>
+            <tr>
+              <td>Вахтёр <sup class="latest">Новинка</sup></td>
+              <td>&lt; 1%</td>
+              <td>35</td>
+              <td>0,5 л</td>
+              <td>150 Р.</td>
+            </tr>
+            <tr>
+              <td>Романтик <sup class="latest">Новинка</sup></td>
+              <td>&lt; 0,5%</td>
+              <td>27</td>
+              <td>0,5 л</td>
+              <td>90 Р.</td>
+            </tr>
+          </table>
+        </div>
       </section>
 
       <section class="order">
-        <h2 class="order__title">Заказать</h2>
-        <p class="order__tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
-        <form class="order__form" action="/keksby-mail" method="post">
-          <div class="form__group">
-            <label for="fullname">Представьтесь:</label>
-            <input type="text" name="fullname" id="fullname">
-          </div>
-          <div class="form__tel-area">
-            <div class="form__tel">
-              <label for="tel">Номер телефона:</label>
-              <input type="tel" name="tel" id="tel">
+        <div class="order__wrapper">
+          <h2 class="order__title">Заказать</h2>
+          <p class="order__tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+          <form class="order__form" action="/keksby-mail" method="post">
+            <div class="form__group">
+              <label for="fullname">Представьтесь:</label>
+              <input type="text" name="fullname" id="fullname">
             </div>
-            <div class="form__tel">
-              <label for="tel-add">Доп. номер:</label>
-              <input type="tel" name="tel-add" id="tel-add">
+            <div class="form__wrapper">
+              <div class="form__group">
+                <label for="tel">Номер телефона:</label>
+                <input type="tel" name="tel" id="tel">
+              </div>
+              <div class="form__group">
+                <label for="tel-add">Доп. номер:</label>
+                <input type="tel" name="tel-add" id="tel-add">
+              </div>
             </div>
-          </div>
-          <div class="form__group">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-          </div>
-          <div class="form__group">
-            <label for="volume">Объём заказа:</label>
-            <select name="volume" id="volume">
-              <option value="1">От 5 до 10 баррелей в неделю</option>
-            </select>
-          </div>
-          <div class="form__group">
-            <label for="comments">Доп. комментарий:</label>
-            <textarea name="comments" id="comments" cols="96" rows="10"></textarea>
-          </div>
-          <div class="checkbox-area">
-            <label>
-              <input type="checkbox" checked name="subscription">
-              Я согласен получать квасную рассылку
-            </label>
-          </div>
-          <input class="btn btn-buy" type="submit" value="Отправить заказ">
+            <div class="form__group">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="form__group">
+              <label for="volume">Объём заказа:</label>
+              <select name="volume" id="volume">
+                <option value="1">От 5 до 10 баррелей в неделю</option>
+                <option value="2">От 11 до 20 баррелей в неделю</option>
+              </select>
+            </div>
+            <div class="form__group">
+              <label for="comments">Доп. комментарий:</label>
+              <textarea name="comments" id="comments" cols="96" rows="10"></textarea>
+            </div>
+            <div class="checkbox-area">
+              <input id="checkbox-1" type="checkbox" checked name="subscription">
+              <label for="checkbox-1">Я согласен получать квасную рассылку</label>              
+            </div>
+            <input class="btn btn-buy" type="submit" value="Отправить заказ">
+            </form>
           </form>
-        </form>
+        </div>
       </section>
     <!-- </main> -->
 
     <footer class="main-footer">
-      <div class="page-header__wrapper">
+      <div class="main-footer__wrapper">
+
         <a class="page-header__logo">
           <img class="page-header__logo-image" src="img/logo.png" alt="Кваст" width="140" height="76">
         </a>
+    
         <nav>
           <ul class="main-nav">
             <li><a href="#">История</a></li>
@@ -231,21 +236,22 @@
             <li><a href="#">Где купить</a></li>
           </ul>
         </nav>
-      </div>
 
-      <div class="footer-social">
-        <a class="btn btn-social btn-inst" href="#">Инстаграм</a>
-        <a class="btn btn-social btn-fb" href="#">Фейсбук</a>
-        <a class="btn btn-social btn-vk" href="#">Вконтакте</a>
-      </div>
+        <div class="footer-social">
+          <a class="btn btn-social btn-inst" href="#">Инстаграм</a>
+          <a class="btn btn-social btn-fb" href="#">Фейсбук</a>
+          <a class="btn btn-social btn-vk" href="#">Вконтакте</a>
+        </div>
 
-      <div class="footer-copyright">
-        <p>При перепечатке материалов ссылка на сайт обязательна!</p>
-        <a href="#">
-          <img class="academy-logo" src="img/htmlacademy.png" alt="HTML Academy" width="27" height="34">
-        </a>
-        <b>Разработчик:</b>
-        <a href="#">HTML Academy</a>
+        <div class="footer-copyright">
+          <p>При перепечатке материалов ссылка на сайт обязательна!</p>
+          <a href="#">
+            <img class="academy-logo" src="img/htmlacademy.png" alt="HTML Academy" width="27" height="34">
+          </a>
+          <b>Разработчик:</b>
+          <a href="#">HTML Academy</a>
+        </div>
+        
       </div>
     </footer>
 
